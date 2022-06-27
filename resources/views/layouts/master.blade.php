@@ -9,9 +9,9 @@
     <script src="{{ asset('/js/app.js') }}"></script>
 
 </head>
-<body>
+<body class="body_color">
 
-<h1>Welcome</h1>
+
 
 </body>
 </html>

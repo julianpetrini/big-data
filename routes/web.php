@@ -15,7 +15,7 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
 
 Route::get('/dashboard', function () {
