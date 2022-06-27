@@ -10283,6 +10283,24 @@ textarea.form-control-lg {
   padding: 0.5rem;
   margin: 1rem;
 }
+
+.post_bbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardBgColor {
+  background-color: #a289ff;
+}
+
+.cardMargin {
+  margin: 0.5rem;
+}
+
+.buttonColor {
+  background-color: #00B1FD;
+}
 /*
 ! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
 *//*
@@ -11045,6 +11063,9 @@ select {
 .-mt-px {
   margin-top: -1px;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .block {
   display: block;
 }
@@ -11270,6 +11291,9 @@ select {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;

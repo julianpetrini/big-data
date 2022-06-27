@@ -5,4 +5,44 @@
 
 <h1 class="title_header">Ihre besten Daten finden und kommentieren</h1>
 
-<p class="pMain">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque blanditiis autem. Laboriosam temporibus veniam rerum labore commodi totam ad nisi fuga, rem alias veritatis iure facilis sapiente quam ipsam!</p>
+<p class="pMain">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque blanditiis autem.
+    Laboriosam temporibus veniam rerum labore commodi totam ad nisi fuga, rem alias veritatis iure facilis sapiente quam
+    ipsam!</p>
+
+
+{{-- THIS WOULD BE THE FORMAT OF THE POST --}}
+
+<section class="post_bbox text-white"> 
+    <div class="card cardBgColor cardMargin " style="width: 18rem;">
+        <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn buttonColor text-white">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card cardBgColor cardMargin" style="width: 18rem;">
+        <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn buttonColor text-white">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card cardBgColor cardMargin" style="width: 18rem;">
+        <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn buttonColor text-white">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card cardBgColor cardMargin" style="width: 18rem;">
+        <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn buttonColor text-white">Go somewhere</a>
+        </div>
+      </div>
+</section> 
