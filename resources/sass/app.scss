@@ -45,7 +45,7 @@
     justify-content: center;
 }
 
-.cardBgColor{
+.cardedit{
     background-color: $backgroundColor;
 }
 .cardMargin{
@@ -53,4 +53,7 @@
 }
 .buttonColor{
     background-color: $buttonColor;
+}
+.cardTitle{
+    font-weight: $titleWeight;
 }

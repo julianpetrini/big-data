@@ -10290,7 +10290,7 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
-.cardBgColor {
+.cardedit {
   background-color: #a289ff;
 }
 
@@ -10300,6 +10300,10 @@ textarea.form-control-lg {
 
 .buttonColor {
   background-color: #00B1FD;
+}
+
+.cardTitle {
+  font-weight: 500;
 }
 /*
 ! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
@@ -11294,6 +11298,9 @@ select {
 }
 .p-3 {
   padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-4 {
   padding-left: 1rem;
