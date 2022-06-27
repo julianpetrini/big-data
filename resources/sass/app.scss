@@ -8,6 +8,12 @@
 @import '~bootstrap/scss/bootstrap';
 $body-bg: #165c22;
 
-.body {
-    background-color: aqua;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$background-color: rgb(33, 86, 121);
+
+body {
+font: 100% $font-stack;
+color: $primary-color;
+background-color: $background-color;
 }
