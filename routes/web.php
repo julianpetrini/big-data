@@ -15,7 +15,7 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
 
 Route::get('/dashboard', function () {
@@ -23,6 +23,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
 Route::get('/test', function () {
     return view('test');
 });
