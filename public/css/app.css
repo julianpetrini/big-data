@@ -10352,6 +10352,11 @@ textarea.form-control-lg {
   margin-top: 3rem;
 }
 
+.postDetailsBox {
+  width: 90vw;
+  margin: auto;
+}
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
   .pMain {
@@ -11101,6 +11106,9 @@ select {
 }
 .m-1 {
   margin: 0.25rem;
+}
+.m-2 {
+  margin: 0.5rem;
 }
 .mx-auto {
   margin-left: auto;

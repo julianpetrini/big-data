@@ -18,6 +18,12 @@ Route::get('/', function () {
     return view('test');
 });
 
+// JUST TO TEST THE PAGE 
+
+Route::get('/postdetail', function () {
+    return view('postDetail');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
