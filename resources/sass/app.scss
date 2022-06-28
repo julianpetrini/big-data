@@ -6,9 +6,7 @@
 // Variables
 @import "variables";
 // Icons
-@import '~mdb-ui-kit/css/mdb.min.css';
-
-
+@import "~mdb-ui-kit/css/mdb.min.css";
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
@@ -32,6 +30,7 @@
     font-size: 4vw;
     text-align: center;
     padding: 0.5rem;
+    font-family: $titlesFont;
 }
 .pMain {
     color: $textColor;
@@ -39,6 +38,7 @@
     text-align: left;
     padding: 0.5rem;
     margin: 1rem;
+    font-family:$contentFont;
 }
 
 .post_bbox {
@@ -62,31 +62,70 @@
     font-weight: $titleWeight;
 }
 
-.footerMtop{
+.footerMtop {
     margin-top: 3rem;
 }
 
-.postDetailsBox{
+.postDetailsBox {
     width: 90vw;
-    margin:auto;
+    margin: auto;
+}
+
+.ul_comments{
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+.aYd{
+    display: flex;
+    justify-content: space-between;
+}
+
+.liComment{
+    color: $textColor;
+    font-size: 2vw;
+    text-align: left;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    font-family:$contentFont;
 }
 
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
-
-        .pMain {
-            color: $textColor;
-            font-size: 1.8vw;
-            text-align: left;
-            padding: 0.5rem;
-            margin: 3rem;
-        }
-
-            .cardBoxStyle {
-                margin: 0.5rem;
-                width: 23vw;
-                height: auto;
-            
-        }
+    .pMain {
+        color: $textColor;
+        font-size: 1.8vw;
+        text-align: left;
+        padding: 0.5rem;
+        margin: 3rem;
+        font-family:$contentFont;
     }
 
+    .cardBoxStyle {
+        margin: 0.5rem;
+        width: 23vw;
+        height: auto;
+    }
+
+    .postDetailsBox {
+        width: 70vw;
+        margin: auto;
+    }
+
+    .img-fluid {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .title_header {
+        margin-top: 3rem;
+        color: $textColor;
+        font-size: 3vw;
+        text-align: center;
+        padding: 0.5rem;
+        font-family: $titlesFont;
+    }
+
+}

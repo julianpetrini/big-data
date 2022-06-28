@@ -10314,6 +10314,7 @@ textarea.form-control-lg {
   font-size: 4vw;
   text-align: center;
   padding: 0.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .pMain {
@@ -10322,6 +10323,7 @@ textarea.form-control-lg {
   text-align: left;
   padding: 0.5rem;
   margin: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .post_bbox {
@@ -10357,6 +10359,26 @@ textarea.form-control-lg {
   margin: auto;
 }
 
+.ul_comments {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+.aYd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.liComment {
+  color: white;
+  font-size: 2vw;
+  text-align: left;
+  padding: 0.1rem;
+  margin: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
   .pMain {
@@ -10365,11 +10387,28 @@ textarea.form-control-lg {
     text-align: left;
     padding: 0.5rem;
     margin: 3rem;
+    font-family: "Montserrat", sans-serif;
   }
   .cardBoxStyle {
     margin: 0.5rem;
     width: 23vw;
     height: auto;
+  }
+  .postDetailsBox {
+    width: 70vw;
+    margin: auto;
+  }
+  .img-fluid {
+    max-width: 80%;
+    height: auto;
+  }
+  .title_header {
+    margin-top: 3rem;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
   }
 }
 /*
@@ -11143,6 +11182,9 @@ select {
 }
 .inline-flex {
   display: inline-flex;
+}
+.table {
+  display: table;
 }
 .grid {
   display: grid;
