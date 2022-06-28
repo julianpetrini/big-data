@@ -48,11 +48,13 @@
 .cardedit{
     background-color: $backgroundColor;
 }
-.cardMargin{
+.cardBoxStyle{
     margin: 0.5rem;
+    width: 21rem;
 }
-.buttonColor{
+.buttonCustom{
     background-color: $buttonColor;
+    margin-top: 0.5rem;
 }
 .cardTitle{
     font-weight: $titleWeight;
