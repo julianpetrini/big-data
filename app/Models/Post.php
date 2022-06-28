@@ -12,9 +12,9 @@ class Post extends Model
     protected $table = 'posts';
     protected $quarded = false;
 
-    **
-     * Get the comments for the blog post.
-     */
+    
+     //Get the comments for the blog post.
+    
     public function comments()
     {
         return $this->hasMany(Comment::class);
