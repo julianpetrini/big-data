@@ -11,4 +11,13 @@ class Comment extends Model
 
     protected $table = 'comments';
     protected $quarded = false;
+
+    /**
+     * Get the post that owns the comment.
+     */
+    public function post()
+    {
+        return $this->belongsTo(Post::class);
+    }
+
 }
