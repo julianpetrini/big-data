@@ -1,18 +1,92 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,500&display=swap");
 
 // Variables
-@import 'variables';
+@import "variables";
+// Icons
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-$background-color: rgb(33, 86, 121);
-
-body {
-    font: 100% $font-stack;
-    color: $primary-color;
-    background-color: $background-color;
+.nav_text {
+    text-transform: uppercase;
+    font-family: $titlesFont;
+    font-weight: $titleWeight;
+    color: $textColor;
 }
+.nav_color {
+    background-color: $navColor;
+}
+
+.body_color {
+    background-color: $backgroundColor;
+}
+
+.title_header {
+    color: $textColor;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0.5rem;
+}
+.pMain {
+    color: $textColor;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.post_bbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardedit {
+    background-color: $backgroundColor;
+}
+.cardBoxStyle {
+    margin: 0.5rem;
+    width: 21rem;
+}
+.buttonCustom {
+    background-color: $buttonColor;
+    margin-top: 0.5rem;
+}
+.cardTitle {
+    font-weight: $titleWeight;
+}
+
+.footerMtop{
+    margin-top: 3rem;
+}
+
+.postDetailsBox{
+    width: 90vw;
+    margin:auto;
+}
+
+/* Desktop adjustments*/
+@media screen and (min-width: 992px) {
+
+        .pMain {
+            color: $textColor;
+            font-size: 1.8vw;
+            text-align: left;
+            padding: 0.5rem;
+            margin: 3rem;
+        }
+
+            .cardBoxStyle {
+                margin: 0.5rem;
+                width: 23vw;
+                height: auto;
+            
+        }
+    }
+

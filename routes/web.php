@@ -15,7 +15,13 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
+});
+
+// JUST TO TEST THE PAGE 
+
+Route::get('/postdetail', function () {
+    return view('postDetail');
 });
 
 Route::get('/dashboard', function () {
@@ -24,8 +30,6 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-
 Route::get('/test', function () {
     return view('test');
 });
-
