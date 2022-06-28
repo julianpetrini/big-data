@@ -63,6 +63,6 @@
         </div>
     </div>
 
-  
+    @include('comment')
 
 </section>

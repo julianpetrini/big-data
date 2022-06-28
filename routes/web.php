@@ -27,3 +27,7 @@ require __DIR__.'/auth.php';
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/', [BlogController::class, 'posts']);
+
+Route::get('/', [BlogController::class, 'comments']);
