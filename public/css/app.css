@@ -10258,7 +10258,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .nav_color {
@@ -10270,14 +10270,14 @@ textarea.form-control-lg {
 }
 
 .title_header {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 4vw;
   text-align: center;
   padding: 0.5rem;
 }
 
 .pMain {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 3vw;
   text-align: left;
   padding: 0.5rem;
@@ -10306,6 +10306,18 @@ textarea.form-control-lg {
 
 .cardTitle {
   font-weight: 500;
+}
+
+.form-title {
+  color: black;
+}
+
+.form-author {
+  color: black;
+}
+
+.form-content {
+  color: black;
 }
 /*
 ! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
@@ -11436,13 +11448,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
-.text-indigo-600 {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 .text-gray-200 {
   --tw-text-opacity: 1;

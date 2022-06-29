@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 
+
 class BlogController extends Controller
 {
     //
@@ -31,8 +32,69 @@ class BlogController extends Controller
         $post->save();
    
         // at the end we make a redirect to the url /books
-        return redirect('/test');        
+        return redirect('/test');
+    
     }
 
+    public function details($id) {
+ 
+        
+        $post = Post::findOrFail($id);
+ 
+        return view('details', ['post' => $post]);
+    }
+
+
+    public function delete($id) {
+ 
+       
+        $result = Post::findOrFail($id)->delete();
+  
+        // after that we redirect to the message list again  
+        return redirect('/test');        
+    } 
+
+    public function update(Request $request, $id) {
+ 
+        $request->validate([
+            'title' => 'required',
+            'author' => 'required',
+            'content' => 'required'
+        ]);
+  
+        $data = Post::findOrFail($id);
+        $data->title = $request->title;
+        $data->author = $request->author;
+        $data->content = $request->content;
+        $data->save();
+  
+        return redirect('/test');
+    }
+
+    // public function newComment(Request $request) {
+
+    //     $request->validate([
+    //         'user' => 'required',
+    //         'comment' => 'required',
+    //     ]);
+
+    //     // we create a new Message-Object
+    //     $comment = new Comment();
+    //     // we set the properties title and content
+    //     // with the values that we got in the post-request
+    //     $comment->Name = $request->name;
+    //     $comment->CommentID = $request->session()->get('entry');
+
+    //     $comment->Comment = $request->comment;
+
+    //     $request->session()->put('newComment',1);
+
+    //     // we save the new Message-Object in the messages
+    //     // table in our database
+    //     $comment->save();
+
+    //     // at the end we make a redirect to the url /messages
+    //     return redirect('/');
+    // }
 
 }

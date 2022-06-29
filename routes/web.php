@@ -30,8 +30,18 @@ Route::get('/test', function () {
 
 Route::get('/test', [BlogController::class, 'showAll']);
 
-//  Route::post('/test' , [BlogController::class, 'posts']);
+Route::post('/test/{id}', [BlogController::class, 'update']);
 
- Route::post('/test', [BlogController::class, 'create']);
+Route::post('/test', [BlogController::class, 'create']);
 
- 
+Route::delete('/test/{id}', [BlogController::class, 'delete']);
+
+Route::post('/update/{id}', [BlogController::class, 'update']);
+
+Route::get('/details/{id}', [BlogController::class, 'details']);
+
+
+
+
+
+// Route::post('/', [BlogController::class, 'comments']);

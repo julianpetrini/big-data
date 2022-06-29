@@ -21,19 +21,6 @@
                 content.</p>
 
 
-
-                <h2>Create new post: </h2>
-            
-                <form action="/test" method="post">
-                    <input type="text" name="title" class="form-title" placeholder="Title">
-                    <input type="text" name="author" class="form-author" placeholder="Author">
-                    <input type="text" name="content" class="form-content" placeholder="Content">
-                    
-                    @csrf
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                
-                </form>
-
                 
             
 
@@ -49,38 +36,6 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
 
-
-                <h2>Recent posts:</h2>
-
-<ul>
-    <!-- loops through the $posts, that this blade template
-    gets from MessageController.php. for each element of the loop which
-    we call $post we print the properties title, content
-    and created_at in an <li> element -->
-    @foreach ($posts as $post) 
-        <li>
-            <b>
-                 
-                <a href="/post/{{$post->id}}">{{$post->title}}:</a>
-            </b><br>
-            {{$post->author}}<br>
-            {{$post->title}}<br>
-            {{$post->content}}<br>
-            <span>Create: {{$post->created_at->diffForHumans()}}</span>
-                <br> 
-
-                <a href="/details/{{$post->id}}">Update from "{{$post->title}}":</a>
-                    <span>{{ $post->updated_at->diffForHumans() }}</span>
-                    <a href="/details/{{$post->id}}" class="btn btn-primary">To Edit</a>
-                
-            <h2>Create new comment: </h2>
-                
-                </b><br>
-
-        </li>
-    @endforeach
-
-</ul>
             <a href="#" class="btn buttonCustom text-white">Go somewhere</a>
         </div>
     </div>
@@ -91,7 +46,33 @@
             <h5 class="card-title "><strong> Card title</strong></h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-               
+                <h2>Post Details:</h2>
+
+<h3>{{$post->title}}</h3>
+<p>{{$post->content}}</p>
+<p>{{$post->content}}</p><br>
+
+<p>{{$post->created_at->diffForHumans()}}
+
+
+<form action="/test/{{$post->id}}"  method="POST" class="form-horizontal">
+                {{ csrf_field() }}
+    
+        <input type="hidden" name="id" class="form-id" value="{{$post->id}}">
+        <input type="text" name="title" class="form-title"  value="{{ $post->title }}">
+        <input type="text" name="author" class="form-author"  value="{{ $post->author }}">
+        <input type="text" name="content" class="form-content"  value="{{ $post->content }}"><br>
+                
+        <br>
+        <button type="submit" class="btn"><i class="save"></i>Update</button><br>
+                                  
+</form>	
+<br>
+<form action="/test/{{$post->id}}" method="post">
+    @csrf
+    @method('delete')
+    <button class="delete" type="submit">Delete</button>
+</form>
             <a href="#" class="btn buttonCustom text-white">Go somewhere</a>
         </div>
     </div>
