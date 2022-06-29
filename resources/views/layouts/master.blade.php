@@ -32,6 +32,9 @@
                     <a class="nav-link text-white" href="login">Log in</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-white" href="register">Register</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-white" href="#">About us</a>
                 </li>
             </ul>
