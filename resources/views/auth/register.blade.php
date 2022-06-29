@@ -1,4 +1,6 @@
-@include ('layouts/nav')
+@extends ('layouts/master')
+
+@section ('register')
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
@@ -16,7 +18,7 @@
             <!-- Name -->
             <div>
                 <x-label for="name" :value="__('Name')" />
-
+                
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
@@ -58,4 +60,4 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
-@include ('layouts/footer')
+@endsection

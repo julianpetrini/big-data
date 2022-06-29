@@ -10379,6 +10379,10 @@ textarea.form-control-lg {
   font-family: "Montserrat", sans-serif;
 }
 
+.text-white {
+  color: white;
+}
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
   .pMain {
@@ -11684,6 +11688,10 @@ select {
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .focus\:z-10:focus {
   z-index: 10;

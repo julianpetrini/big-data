@@ -42,6 +42,7 @@
 @yield ('header')
 @yield ('posts')
 @yield ('login')
+@yield ('register')
 
 @yield ('postDetail')
 

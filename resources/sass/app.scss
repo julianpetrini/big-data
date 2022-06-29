@@ -91,6 +91,9 @@
     margin: 0.5rem;
     font-family:$contentFont;
 }
+.text-white{
+    color:$textColor;
+}
 
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
