@@ -16,7 +16,7 @@
 {{-- NAV --}}
 <nav class="navbar navbar-expand-lg navbar-light nav_color text-white">
     <div class="container-fluid">
-        <a class="navbar-brand nav_text text-white" href="#"><img src={{ asset('img/nav_logo.png') }}
+        <a class="navbar-brand nav_text text-white" href="/"><img src={{ asset('img/nav_logo.png') }}
                 width="30" height="30" class="d-inline-block align-top" alt="">
             big data | let's talk</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
