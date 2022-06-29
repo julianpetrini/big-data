@@ -1,7 +1,7 @@
 @extends ('layouts/master')
-@include ('layouts/nav')
 
 
+@section('header')
 <header>
 
     <img src="{{ asset('img/logo_big_data_white.png') }}" class="img-fluid rounded mx-auto d-block"
@@ -15,14 +15,11 @@
         ipsam!</p>
 
 </header>
-
+@endsection
 
 {{-- THIS WOULD BE THE FORMAT OF THE POST --}}
-
+@section ('posts')
 <section class="post_bbox text-white">
-
-   
-
     <div class="card cardBgColor cardBoxStyle">
         <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
         <div class="card-body cardedit">
@@ -36,12 +33,7 @@
             <a href={{'postdetail'}} class="btn buttonCustom text-white">Full post</a>
         </div>
     </div>
-
-   
-
-
-
 </section>
+@endsection
 
 
-@include ('layouts/footer')

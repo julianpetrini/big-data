@@ -1,8 +1,8 @@
 @extends ('layouts/master')
-@include ('layouts/nav')
+
 
 {{-- HERE GOES THE CONTENT --}}
-
+@section ('postDetail')
 <div class="postDetailsBox">
     <img src="{{ asset('img/bdata.jpg') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
 
@@ -46,9 +46,9 @@
         <h1 class="title_header">I don't have any nice messages to show you yet ♥</h1>
 {{-- @endif --}}
 </section>
+@endsection
 
 
 
 
 
-@include ('layouts/footer')
