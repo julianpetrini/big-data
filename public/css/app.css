@@ -10383,6 +10383,10 @@ textarea.form-control-lg {
   color: white;
 }
 
+.buttonColor {
+  background-color: #00B1FD;
+}
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
   .pMain {
