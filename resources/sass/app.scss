@@ -38,7 +38,7 @@
     text-align: left;
     padding: 0.5rem;
     margin: 1rem;
-    font-family:$contentFont;
+    font-family: $contentFont;
 }
 
 .post_bbox {
@@ -71,31 +71,30 @@
     margin: auto;
 }
 
-.ul_comments{
-    
-    margin-left: 2rem;
-    margin-right: 2rem;
+.ul_comments {
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: left;
 }
 
-.aYd{
+.aYd {
     display: flex;
     justify-content: space-between;
 }
 
-.liComment{
+.liComment {
     color: $textColor;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: left;
     padding: 0.1rem;
-    margin: 0.5rem;
-    font-family:$contentFont;
+    margin: 0.1rem;
+    font-family: $contentFont;
 }
 // BREEZE CLASS
-.text-white{
-    color:$textColor;
+.text-white {
+    color: $textColor;
 }
-.buttonColor{
+.buttonColor {
     background-color: $buttonColor;
 }
 
@@ -107,7 +106,7 @@
         text-align: left;
         padding: 0.5rem;
         margin: 3rem;
-        font-family:$contentFont;
+        font-family: $contentFont;
     }
 
     .cardBoxStyle {
@@ -134,5 +133,20 @@
         padding: 0.5rem;
         font-family: $titlesFont;
     }
-
+    .liComment {
+        color: $textColor;
+        font-size: 2vw;
+        text-align: left;
+        padding: 0.1rem;
+        margin: 0.5rem;
+        font-family: $contentFont;
+    }
+    .ul_comments {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: left;
+    }
+    .form-label {
+        font-size: 2rem;    
+    }
 }

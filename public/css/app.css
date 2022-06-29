@@ -10360,8 +10360,8 @@ textarea.form-control-lg {
 }
 
 .ul_comments {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: left;
 }
 
@@ -10372,10 +10372,10 @@ textarea.form-control-lg {
 
 .liComment {
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: left;
   padding: 0.1rem;
-  margin: 0.5rem;
+  margin: 0.1rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -10417,6 +10417,22 @@ textarea.form-control-lg {
     text-align: center;
     padding: 0.5rem;
     font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  .liComment {
+    color: white;
+    font-size: 2vw;
+    text-align: left;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .ul_comments {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+  }
+  .form-label {
+    font-size: 2rem;
   }
 }
 /*
