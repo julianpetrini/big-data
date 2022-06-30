@@ -15,7 +15,11 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/', function () {
-    return view('test');
+    return view('home');
+});
+
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
 // JUST TO TEST THE PAGE 
