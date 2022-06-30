@@ -10307,6 +10307,11 @@ textarea.form-control-lg {
 
 .body_color {
   background-color: #a289ff;
+  min-height: 90vh;
+}
+
+.footerFix {
+  margin-top: auto;
 }
 
 .title_header {
@@ -11200,6 +11205,9 @@ select {
 }
 .block {
   display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;

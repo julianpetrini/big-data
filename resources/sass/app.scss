@@ -23,6 +23,11 @@
 
 .body_color {
     background-color: $backgroundColor;
+    min-height: 90vh;
+}
+
+.footerFix {
+    margin-top: auto;
 }
 
 .title_header {
@@ -147,6 +152,6 @@
         text-align: left;
     }
     .form-label {
-        font-size: 2rem;    
+        font-size: 2rem;
     }
 }

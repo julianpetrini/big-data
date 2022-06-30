@@ -3,29 +3,36 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
+
+// THIS TAKES YOU TO THE HOME PAGE ; LANDING PAGE 
 Route::get('/', function () {
     return view('home');
 });
-
+// THIS IS THE WELCOME AUTOMATIC LAYOUT THAT LARAVEL BRINGS
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
-// JUST TO TEST THE PAGE 
+Route::get('/createpost', function () {
+    return view('createPost');
+});
 
+Route::get('/editcomment', function () {
+    return view('editComment');
+});
+
+// -----------------IMPORTANT. WHEN YOU ENTER TO A POST DETAILS AND YOU CLICK ON THE NAV FOR EXAMPLE REGISTER OR LOGIN IT TAKES
+// YOU TO A http://localhost/postdetail/login AND THEN DOESNT WORK. IT SHOULD BE ALWAYS localhost/login
+
+
+// THIS WILL TAKES YOU TO THE POST DETAIL YOU CLICKED ON 
 Route::get('/postdetail/{id}', function () {
     return view('postDetail');
+});
+
+Route::get('/aboutus', function () {
+    return view('aboutUs');
 });
 
 Route::get('/dashboard', function () {
@@ -34,14 +41,13 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/test', function () {
-    return view('test');
-});
+// Route::get('/test', function () {
+//     return view('test');
+// });
 
-
-Route::get('/test', function () {
-    return view('test');
-});
+// Route::get('/test', function () {
+//     return view('test');
+// });
 
 Route::get('/', [BlogController::class, 'showAll']);
 

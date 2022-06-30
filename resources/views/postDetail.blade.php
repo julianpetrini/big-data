@@ -26,6 +26,7 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write an amazing comment"></textarea>
         </div>
         <a href="#" class="btn buttonCustom text-white">submit</a>
+        <a href="editComment" class="btn buttonCustom text-white">Edit</a>
     </form>
 </div>
 
