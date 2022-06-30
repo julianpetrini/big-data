@@ -35,7 +35,7 @@
                     <a class="nav-link text-white" href="register">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About us</a>
+                    <a class="nav-link text-white" href="aboutus">About us</a>
                 </li>
             </ul>
         </div>
@@ -46,13 +46,13 @@
 @yield ('posts')
 @yield ('login')
 @yield ('register')
-
+@yield ('aboutus')
 @yield ('postDetail')
 
 <body class="body_color">
 
 
-{{-- FOOTER --}}
+    {{-- FOOTER --}}
     <footer class="nav_text nav_color text-center footerMtop p-3">
         <a class="nav_text text-white" href="/"><img src={{ asset('img/nav_logo.png') }} width="40"
                 height="40" class="d-inline-block align-top" alt="">

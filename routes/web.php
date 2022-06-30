@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/aboutus', function () {
+    return view('aboutUs');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
