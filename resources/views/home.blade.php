@@ -19,21 +19,26 @@
 
 {{-- THIS WOULD BE THE FORMAT OF THE POST --}}
 @section ('posts')
+
+
 <section class="post_bbox text-white">
+    @foreach ($posts as $post)
     <div class="card cardBgColor cardBoxStyle">
+       
         <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
         <div class="card-body cardedit">
-            <h5 class="card-title "><strong>Post Title</strong></h5>
+            <h5 class="card-title "><strong>{{ $post->title }}</strong></h5>
             <div class="aYd">
-                <h6 class="card-subtitle mb-2 text-white"> Author</h6>
-                <h6 class="card-subtitle mb-2 fw-lighter">20.06.2022</h6>
+                <h6 class="card-subtitle mb-2 text-white">{{ $post->author }}</h6>
+                <h6 class="card-subtitle mb-2 fw-lighter">{{ $post->created_at }}</h6>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href={{'postdetail'}} class="btn buttonCustom text-white">Full post</a>
+            <p class="card-text">{{ $post->content }}</p>
+            <a href="/postdetail/{{ $post->id }}" class="btn buttonCustom text-white">Full post</a>
         </div>
     </div>
+    @endforeach
 </section>
+
 @endsection
 
 
