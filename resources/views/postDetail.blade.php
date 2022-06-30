@@ -6,7 +6,7 @@
 <div class="postDetailsBox">
     <img src="{{ asset('img/bdata.jpg') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
 
-    <h2 class="title_header"><strong> TITLE OF THE POST HERE </strong></h2>
+    <h2 class="title_header"><strong> title</strong></h2>
     <p class="pMain">Description of the post. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         cumque blanditiis autem.
         Laboriosam temporibus veniam rerum labore commodi totam ad nisi fuga, rem alias veritatis iure facilis sapiente

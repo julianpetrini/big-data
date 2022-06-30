@@ -24,7 +24,7 @@ Route::get('/welcome', function () {
 
 // JUST TO TEST THE PAGE 
 
-Route::get('/postdetail', function () {
+Route::get('/postdetail/{id}', function () {
     return view('postDetail');
 });
 
@@ -37,3 +37,20 @@ require __DIR__.'/auth.php';
 Route::get('/test', function () {
     return view('test');
 });
+
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/', [BlogController::class, 'showAll']);
+
+Route::post('/test/{id}', [BlogController::class, 'update']);
+
+Route::post('/test', [BlogController::class, 'create']);
+
+Route::delete('/test/{id}', [BlogController::class, 'delete']);
+
+Route::post('/update/{id}', [BlogController::class, 'update']);
+
+Route::get('/details/{id}', [BlogController::class, 'details']);
