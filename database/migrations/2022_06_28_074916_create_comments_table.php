@@ -17,7 +17,6 @@ return new class extends Migration
             $table->increments('id');
 
             $table->integer('post_id')->unsigned();
-<<<<<<< HEAD
         
             $table->string("comment");
         
@@ -27,17 +26,6 @@ return new class extends Migration
         
                 ->onDelete('cascade');
         
-=======
-
-            $table->string("comment");
-
-            $table->timestamps();
-
-            $table->foreign('post_id')->references('id')->on('posts')
-
-                ->onDelete('cascade');
-
->>>>>>> 4f3b7efed6fa862633f46563606a963b7f9d8143
         });
     }
 

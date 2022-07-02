@@ -20,8 +20,4 @@ class Comment extends Model
         return $this->belongsTo(Post::class);
     }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4f3b7efed6fa862633f46563606a963b7f9d8143
