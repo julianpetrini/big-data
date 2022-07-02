@@ -41,17 +41,17 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/test', function () {
-    return view('test');
+Route::get('/home', function () {
+    return view('home');
 });
 
-Route::get('/test', [BlogController::class, 'showAll']);
+Route::get('/postDetail', [BlogController::class, 'showAll']);
 
-Route::post('/test/{id}', [BlogController::class, 'update']);
+Route::post('/postDetail/{id}', [BlogController::class, 'update']);
 
-Route::post('/test', [BlogController::class, 'create']);
+Route::post('/home', [BlogController::class, 'create']);
 
-Route::delete('/test/{id}', [BlogController::class, 'delete']);
+Route::delete('/postDetail/{id}', [BlogController::class, 'delete']);
 
 Route::post('/update/{id}', [BlogController::class, 'update']);
 

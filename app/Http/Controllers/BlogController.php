@@ -12,7 +12,7 @@ class BlogController extends Controller
     public function showAll() {
          $posts = Post::all()->sortByDesc('created_at');
 
-         return view('test', ['posts' => $posts]);
+         return view('home', ['posts' => $posts]);
     }
 
     public function create(Request $request) {
@@ -66,7 +66,7 @@ class BlogController extends Controller
         $data->content = $request->content;
         $data->save();
   
-        return redirect('/test');
+        return redirect('/postDetail');
     }
 
     // public function newComment(Request $request) {
