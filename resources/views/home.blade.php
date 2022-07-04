@@ -32,7 +32,7 @@
                 <h6 class="card-subtitle mb-2 text-white">{{ $post->author }}</h6>
                 <h6 class="card-subtitle mb-2 fw-lighter">{{ $post->created_at }}</h6>
             </div>
-            <p class="card-text">{{ $post->content }}</p>
+            <p class="card-text cTextElip">{{ $post->content }}</p>
             <a href="/postdetail/{{ $post->id }}" class="btn buttonCustom text-white">Full post</a>
         </div>
     </div>
