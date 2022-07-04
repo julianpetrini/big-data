@@ -59,4 +59,4 @@ Route::delete('/test/{id}', [BlogController::class, 'delete']);
 
 Route::post('/update/{id}', [BlogController::class, 'update']);
 
-Route::get('/details/{id}', [BlogController::class, 'details']);
+Route::get('/postdetail/{id}', [BlogController::class, 'postDetails']);

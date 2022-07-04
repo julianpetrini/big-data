@@ -4,14 +4,11 @@
 {{-- HERE GOES THE CONTENT --}}
 @section ('postDetail')
 <div class="postDetailsBox">
-    <img src="{{ asset('img/bdata.jpg') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
+    <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($detalleDelPost->postPic)) }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
 
-    <h2 class="title_header"><strong> title</strong></h2>
-    <p class="pMain">Description of the post. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        cumque blanditiis autem.
-        Laboriosam temporibus veniam rerum labore commodi totam ad nisi fuga, rem alias veritatis iure facilis sapiente
-        quam
-        ipsam!</p>
+    <h2 class="title_header"><strong>{{ $detalleDelPost->title }}</strong></h2>
+    <h3 class="title_header">{{ $detalleDelPost->author }}</h3>
+    <p class="pMain">{{ $detalleDelPost->content }}</p>
 </div>
 
 <div class="postDetailsBox">

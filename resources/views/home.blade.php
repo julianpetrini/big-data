@@ -25,7 +25,7 @@
     @foreach ($posts as $post)
     <div class="card cardBgColor cardBoxStyle">
        
-        <img class="card-img-top" src="{{ asset('img/bdata.jpg') }}" alt="Card image cap">
+        <img class="card-img-top" src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}" alt="Card image cap">
         <div class="card-body cardedit">
             <h5 class="card-title "><strong>{{ $post->title }}</strong></h5>
             <div class="aYd">

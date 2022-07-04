@@ -12,7 +12,22 @@ class BlogController extends Controller
     public function showAll() {
          $posts = Post::all()->sortByDesc('created_at');
 
-         return view('/home', ['posts' => $posts]);
+         return view('home', ['posts' => $posts]);
+    }
+
+    
+
+    public function postDetails($id) {
+ 
+
+       
+        $posts= Post ::find($id);
+ 
+        return view('postDetail', ['detalleDelPost' => $posts]);
+    
+
+
+        
     }
 
     public function create(Request $request) {
@@ -35,15 +50,6 @@ class BlogController extends Controller
         return redirect('/home');
 
     }
-
-    public function details($id) {
- 
-
-        $post = Post::findOrFail($id);
- 
-        return view('postDetail', ['postdetails' => $post]);
-    }
-
 
     public function delete($id) {
  
