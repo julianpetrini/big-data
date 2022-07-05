@@ -20,6 +20,10 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             <a href="#" class="btn buttonCustom text-white">Go somewhere</a>
+                <div class="row d-flex justify-content-center">
+                    {{-- comment module --}}
+                    @include('comment')
+                </div>
         </div>
     </div>
 
@@ -63,6 +67,6 @@
         </div>
     </div>
 
-    @include('comment')
+
 
 </section>

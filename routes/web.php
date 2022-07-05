@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,7 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/', [BlogController::class, 'posts']);
+Route::resource('posts', PostController::class);
 
-Route::get('/', [BlogController::class, 'comments']);
+Route::get('new-comment', [CommentController::class, 'newComment']);
+Route::post('comment', [CommentController::class, 'addComment']);

@@ -10,7 +10,7 @@ class BlogController extends Controller
     public function newComment(Request $request) {
 
         $request->validate([
-            'name' => 'required',
+            'user' => 'required',
             'comment' => 'required',
         ]);
 
