@@ -11,7 +11,7 @@
                     <br/>
                     <h3>{{ $post->title }}</h3>
                     <p>
-                        {{ $post->body }}
+                        {{ $post->content }}
                     </p>
                     <hr />
                     <h4>Display Comments</h4>
