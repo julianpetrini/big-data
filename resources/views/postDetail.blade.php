@@ -27,7 +27,7 @@
         </div>
         @csrf
         <button type="submit" class="btn buttonCustom text-white">Submit</button>
-        <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+        
     </form>
 </div>
 
@@ -47,7 +47,9 @@
                 @csrf
                 @method('delete')
                 <button class="btn btn-primary" type="submit">Delete</button>
+                <a href="editComment" class="btn buttonCustom text-white">Edit</a>
             </form>
+            
         @endforeach
         
    
