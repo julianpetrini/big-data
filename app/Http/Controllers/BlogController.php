@@ -23,7 +23,7 @@ class BlogController extends Controller
        
         $posts= Post ::find($id);
  
-        return view('postDetail', ['detalleDelPost' => $posts]);
+        return view('postDetail', ['post' => $posts]);
     
 
 
