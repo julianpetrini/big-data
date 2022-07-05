@@ -10,20 +10,21 @@
 </div>
 
 <div class="postDetailsBox">
-    <form action="">
+    <form action="/" method="post">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label text-white">Title of the post</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label text-white">Author</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            <input type="text" name="author" class="form-control" id="exampleFormControlInput1" placeholder="">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label text-white">Here you should write your post</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write an amazing comment"></textarea>
+            <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write an amazing comment"></textarea>
         </div>
-        <a href="#" class="btn buttonCustom text-white">submit</a>
+        @csrf
+        <button class="btn buttonCustom text-white">Submit</button>
        
     </form>
 </div>
