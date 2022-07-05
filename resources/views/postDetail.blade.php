@@ -10,7 +10,7 @@
     <h3 class="title_header">{{ $post->author }}</h3>
     <p class="pMain">{{ $post->content }}</p>
 </div>
-
+@auth
 <div class="postDetailsBox">
     <h3 class="title_header"><strong> LEAVE YOUR COMMENTS </strong></h3>
     <form action="/postDetail" method="post">
@@ -27,14 +27,14 @@
         </div>
         @csrf
         <button type="submit" class="btn buttonCustom text-white">Submit</button>
-        
+
     </form>
 </div>
-
+@endauth
 </section>
 
     <h3 class="title_header">THOUGHTS</h3>
-   
+
         <section class="postDetailsBox">
         <!-- loop through the comment list of a message and display the comment text and user -->
         @foreach ($post->comments as $comment)
@@ -43,16 +43,17 @@
                 <li class="liComment">{{$comment->comment}}</li>
 
             </ul>
+        @auth
             <form action="/postDetail/{{$post->id}}" method="post">
                 @csrf
                 @method('delete')
                 <button class="btn btn-primary" type="submit">Delete</button>
                 <a href="editComment" class="btn buttonCustom text-white">Edit</a>
             </form>
-            
+        @endauth
         @endforeach
-        
-   
+
+
 </section>
 
 @endsection

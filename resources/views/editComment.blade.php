@@ -2,7 +2,6 @@
 
 @section ('editComment')
 
-
 <div class="postDetailsBox">
 
     <h2 class="title_header"><strong>Edit your comment</strong></h2>
@@ -24,7 +23,7 @@
         @csrf
         @method('delete')
         <a href="#" class="btn buttonCustom text-white">delete</a>
-  
+
     </form>
 </div>
 
