@@ -4,11 +4,11 @@
 {{-- HERE GOES THE CONTENT --}}
 @section ('postDetail')
 <div class="postDetailsBox">
-    <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($detalleDelPost->postPic)) }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
+    <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
 
-    <h2 class="title_header"><strong>{{ $detalleDelPost->title }}</strong></h2>
-    <h3 class="title_header">{{ $detalleDelPost->author }}</h3>
-    <p class="pMain">{{ $detalleDelPost->content }}</p>
+    <h2 class="title_header"><strong>{{ $post->title }}</strong></h2>
+    <h3 class="title_header">{{ $post->author }}</h3>
+    <p class="pMain">{{ $post->content }}</p>
 </div>
 
 <div class="postDetailsBox">
