@@ -10,18 +10,6 @@
     <h3 class="title_header">{{ $detalleDelPost->author }}</h3>
     <p class="pMain">{{ $detalleDelPost->content }}</p>
 </div>
-<!-- loop through the comment list of a message and display the comment text and user -->
-@foreach ($post->comments as $comment)
- 
-   <p>{{$comment->comment}}</p>
- 
-@endforeach
-
-<form action="/postDetail/{{$post->id}}" method="post">
-   @csrf
-   @method('delete')
-   <button class="btn btn-primary" type="submit">Delete</button>
-</form>
 
 <div class="postDetailsBox">
     <h3 class="title_header"><strong> LEAVE YOUR COMMENTS </strong></h3>
@@ -43,6 +31,26 @@
     </form>
 </div>
 
+</section>
+
+    <h3 class="title_header">THOUGHTS</h3>
+   
+        <section class="postDetailsBox">
+        <!-- loop through the comment list of a message and display the comment text and user -->
+        @foreach ($post->comments as $comment)
+            <ul class="ul_comments text-white">
+                <li class="liComment"><strong></strong></li>
+                <li class="liComment">{{$comment->comment}}</li>
+
+            </ul>
+            <form action="/postDetail/{{$post->id}}" method="post">
+                @csrf
+                @method('delete')
+                <button class="btn btn-primary" type="submit">Delete</button>
+            </form>
+        @endforeach
+        
+   
 </section>
 
 @endsection
