@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CommentController;
+
 
 
 
@@ -27,9 +29,9 @@ Route::get('/editcomment', function () {
 
 
 // THIS WILL TAKES YOU TO THE POST DETAIL YOU CLICKED ON 
-Route::get('/postdetail/{id}', function () {
-    return view('postDetail');
-});
+// Route::get('/postdetail/{id}', function () {
+//     return view('postDetail');
+// });
 
 Route::get('/aboutus', function () {
     return view('aboutUs');
@@ -51,12 +53,16 @@ require __DIR__.'/auth.php';
 
 Route::get('/', [BlogController::class, 'showAll']);
 
-Route::post('/test/{id}', [BlogController::class, 'update']);
+// Route::post('/test/{id}', [BlogController::class, 'update']);
 
-Route::post('/test', [BlogController::class, 'create']);
+Route::post('/', [BlogController::class, 'create']);
 
-Route::delete('/test/{id}', [BlogController::class, 'delete']);
+// Route::delete('/test/{id}', [BlogController::class, 'delete']);
 
 Route::post('/update/{id}', [BlogController::class, 'update']);
 
 Route::get('/postdetail/{id}', [BlogController::class, 'postDetails']);
+
+Route::get('/postdetail/{id}', [BlogController::class, 'details']);
+
+Route::post('/postDetail', [CommentController::class, 'addComment']);

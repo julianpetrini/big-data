@@ -9,8 +9,8 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $table = 'posts';
-    protected $quarded = false;
+    // protected $table = 'posts';
+    // protected $quarded = false;
 
 
      //Get the comments for the blog post.

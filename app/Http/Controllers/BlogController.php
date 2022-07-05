@@ -47,9 +47,19 @@ class BlogController extends Controller
         $post->save();
 
         // at the end we make a redirect to the url /posts
-        return redirect('/home');
+        return redirect('/');
 
     }
+
+
+    public function details($id) {
+ 
+
+        $post = Post::findOrFail($id);
+        
+        return view('postDetail', ['post' => $post]);
+    }
+
 
     public function delete($id) {
  
