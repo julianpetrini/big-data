@@ -1,3 +1,5 @@
+@extends ('layouts/masterDashboard')
+@section ('dashboard')
 <nav x-data="{ open: false }" class="body_color border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="body_color max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,3 +92,4 @@
         </div>
     </div>
 </nav>
+@endsection
