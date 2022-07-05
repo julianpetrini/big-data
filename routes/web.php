@@ -7,7 +7,7 @@ use App\Http\Controllers\CommentController;
 
 
 
-// THIS TAKES YOU TO THE HOME PAGE ; LANDING PAGE 
+// THIS TAKES YOU TO THE HOME PAGE ; LANDING PAGE
 Route::get('/', function () {
     return view('home');
 });
@@ -28,7 +28,7 @@ Route::get('/editcomment', function () {
 // YOU TO A http://localhost/postdetail/login AND THEN DOESNT WORK. IT SHOULD BE ALWAYS localhost/login
 
 
-// THIS WILL TAKES YOU TO THE POST DETAIL YOU CLICKED ON 
+// THIS WILL TAKES YOU TO THE POST DETAIL YOU CLICKED ON
 // Route::get('/postdetail/{id}', function () {
 //     return view('postDetail');
 // });
@@ -66,3 +66,12 @@ Route::get('/postdetail/{id}', [BlogController::class, 'postDetails']);
 Route::get('/postdetail/{id}', [BlogController::class, 'details']);
 
 Route::post('/postDetail', [CommentController::class, 'addComment']);
+
+//protecting a group of Routes
+Route::middleware('auth')->group(function () {
+   Route::post('/create', [BlogController::class, 'create']);
+   Route::post('comment', [BlogController::class, 'addComment']);
+});
+
+//protecting a single Route
+Route::delete('/post/{id}', [BlogController::class, 'delete'])->middleware('auth');

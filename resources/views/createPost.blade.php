@@ -3,6 +3,7 @@
 
 {{-- HERE GOES THE CONTENT --}}
 @section ('createpost')
+@auth
 <div class="postDetailsBox">
     <br>
     <h1 class="title_header"><strong> Create your own post </strong></h1>
@@ -25,8 +26,9 @@
         </div>
         @csrf
         <button class="btn buttonCustom text-white">Submit</button>
-       
+
     </form>
+@endauth
 </div>
 
 </section>

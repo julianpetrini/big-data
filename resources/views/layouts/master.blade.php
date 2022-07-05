@@ -28,17 +28,19 @@
                 <li class="nav-item">
                     <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
                 </li>
+                @guest
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="login">Log in</a>
+                    <a class="nav-link text-white" href="/login">Log in</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="register">Register</a>
+                    <a class="nav-link text-white" href="/register">Register</a>
+                </li>
+                @endguest
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/aboutus">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="aboutus">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="createpost">Create a post</a>
+                    <a class="nav-link text-white" href="/createpost">Create a post</a>
                 </li>
             </ul>
         </div>
