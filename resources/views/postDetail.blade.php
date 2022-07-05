@@ -4,11 +4,11 @@
 {{-- HERE GOES THE CONTENT --}}
 @section ('postDetail')
 <div class="postDetailsBox">
-    <img src="{{ asset('img/bdata.jpg') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
-    <h3 class="title_header"><strong>{{$post->author}}</strong></h3>
-    <h2 class="title_header"><strong>{{$post->title}}</strong></h2>
-    <p class="pMain">{{$post->content}}</p>
-    <h3 class="title_header"><strong>{{$post->created_at->diffForHumans()}}</strong></h3>
+    <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($detalleDelPost->postPic)) }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
+
+    <h2 class="title_header"><strong>{{ $detalleDelPost->title }}</strong></h2>
+    <h3 class="title_header">{{ $detalleDelPost->author }}</h3>
+    <p class="pMain">{{ $detalleDelPost->content }}</p>
 </div>
 <!-- loop through the comment list of a message and display the comment text and user -->
 @foreach ($post->comments as $comment)

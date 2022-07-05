@@ -61,6 +61,8 @@ Route::post('/', [BlogController::class, 'create']);
 
 Route::post('/update/{id}', [BlogController::class, 'update']);
 
+Route::get('/postdetail/{id}', [BlogController::class, 'postDetails']);
+
 Route::get('/postdetail/{id}', [BlogController::class, 'details']);
 
 Route::post('/postDetail', [CommentController::class, 'addComment']);

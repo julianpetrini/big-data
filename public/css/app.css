@@ -10346,6 +10346,12 @@ textarea.form-control-lg {
   width: 21rem;
 }
 
+.cTextElip {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .buttonCustom {
   background-color: #00B1FD;
   margin-top: 0.5rem;
@@ -11199,6 +11205,9 @@ select {
 }
 .-mr-2 {
   margin-right: -0.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
