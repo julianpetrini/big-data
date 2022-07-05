@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label text-white">Author</label>
-            <input type="text" name="author" class="form-control" id="exampleFormControlInput1" placeholder="">
+            <input type="text" name="author" class="form-control" id="exampleFormControlInput1" placeholder="{{Auth::user()->name}}" readonly>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label text-white">Here you should write your post</label>

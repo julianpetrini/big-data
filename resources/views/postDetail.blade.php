@@ -19,7 +19,7 @@
             <input type="hidden" name="post_id" value="{{$post->id}}">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="{{Auth::user()->name}}" readonly>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us what you think</label>
@@ -41,15 +41,21 @@
             <ul class="ul_comments text-white">
                 <li class="liComment"><strong></strong></li>
                 <li class="liComment">{{$comment->comment}}</li>
+                <li class="liComment">{{$comment->author}}</li>
 
             </ul>
         @auth
-            <form action="/postDetail/{{$post->id}}" method="post">
-                @csrf
-                @method('delete')
-                <button class="btn btn-primary" type="submit">Delete</button>
-                <a href="editComment" class="btn buttonCustom text-white">Edit</a>
-            </form>
+                <form action="/postDetail/{{$post->id}}" method="post">
+
+                   
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-primary" type="submit">Delete</button>
+                        <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+                    
+                </form>
+            
+
         @endauth
         @endforeach
 

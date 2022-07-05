@@ -67,6 +67,8 @@ Route::get('/postdetail/{id}', [BlogController::class, 'details']);
 
 Route::post('/postDetail', [CommentController::class, 'addComment']);
 
+// Route::post('/postDetail/{id}', [CommentController::class, 'deleteComment']);
+
 //protecting a group of Routes
 Route::middleware('auth')->group(function () {
    Route::post('/create', [BlogController::class, 'create']);
