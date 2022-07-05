@@ -4,24 +4,12 @@
 {{-- HERE GOES THE CONTENT --}}
 @section ('postDetail')
 <div class="postDetailsBox">
-    <img src="{{ asset('img/bdata.jpg') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
-    <h3 class="title_header"><strong>{{$post->author}}</strong></h3>
-    <h2 class="title_header"><strong>{{$post->title}}</strong></h2>
-    <p class="pMain">{{$post->content}}</p>
-    <h3 class="title_header"><strong>{{$post->created_at->diffForHumans()}}</strong></h3>
-</div>
-<!-- loop through the comment list of a message and display the comment text and user -->
-@foreach ($post->comments as $comment)
- 
-   <p>{{$comment->comment}}</p>
- 
-@endforeach
+    <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
 
-<form action="/postDetail/{{$post->id}}" method="post">
-   @csrf
-   @method('delete')
-   <button class="btn btn-primary" type="submit">Delete</button>
-</form>
+    <h2 class="title_header"><strong>{{ $post->title }}</strong></h2>
+    <h3 class="title_header">{{ $post->author }}</h3>
+    <p class="pMain">{{ $post->content }}</p>
+</div>
 
 <div class="postDetailsBox">
     <h3 class="title_header"><strong> LEAVE YOUR COMMENTS </strong></h3>
@@ -39,10 +27,32 @@
         </div>
         @csrf
         <button type="submit" class="btn buttonCustom text-white">Submit</button>
-        <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+        
     </form>
 </div>
 
+</section>
+
+    <h3 class="title_header">THOUGHTS</h3>
+   
+        <section class="postDetailsBox">
+        <!-- loop through the comment list of a message and display the comment text and user -->
+        @foreach ($post->comments as $comment)
+            <ul class="ul_comments text-white">
+                <li class="liComment"><strong></strong></li>
+                <li class="liComment">{{$comment->comment}}</li>
+
+            </ul>
+            <form action="/postDetail/{{$post->id}}" method="post">
+                @csrf
+                @method('delete')
+                <button class="btn btn-primary" type="submit">Delete</button>
+                <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+            </form>
+            
+        @endforeach
+        
+   
 </section>
 
 @endsection

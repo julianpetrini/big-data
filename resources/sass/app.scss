@@ -59,6 +59,11 @@
     margin: 0.5rem;
     width: 21rem;
 }
+.cTextElip{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 .buttonCustom {
     background-color: $buttonColor;
     margin-top: 0.5rem;
