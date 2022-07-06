@@ -45,12 +45,15 @@
 
             </ul>
         @auth
-                <form action="/postDetail/{{$post->id}}" method="post">
+                
+                <form action="/comment/{{$comment->id}}" method="post">
 
-                   
                         @csrf
                         @method('delete')
+                        
+                    
                         <button class="btn btn-primary" type="submit">Delete</button>
+
                         <a href="editComment" class="btn buttonCustom text-white">Edit</a>
                     
                 </form>
