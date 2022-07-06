@@ -31,7 +31,27 @@
         @csrf
         <button type="submit" class="btn buttonCustom text-white">Submit</button>
 
-            </form>
+    <h2 class="title_header"><strong>{{ $post->title }}</strong></h2>
+    <h3 class="title_header">{{ $post->author }}</h3>
+    <p class="pMain">{{ $post->content }}</p>
+</div>
+@auth
+<div class="postDetailsBox">
+    <h3 class="title_header"><strong> LEAVE YOUR COMMENTS </strong></h3>
+    <form action="/postDetail" method="post">
+            <!-- hidden field holding message->id to remember, which message
+            the new comment will belong to -->
+            <input type="hidden" name="post_id" value="{{$post->id}}">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="{{Auth::user()->name}}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us what you think</label>
+            <textarea  name="comment" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write an amazing comment"></textarea>
+
+    </form>
+
         </div>
     @endauth
     </section>
@@ -41,10 +61,16 @@
     <section class="postDetailsBox">
         <!-- loop through the comment list of a message and display the comment text and user -->
         @foreach ($post->comments as $comment)
+<<<<<<< HEAD
             <ul class="ul_comments text-white">           
+=======
+            <ul class="ul_comments text-white">
+            
+>>>>>>> 629d6bff9e0190168e8d5a731a4a49058c20599f
                 <li class="liComment">{{$comment->comment}}</li>
                 <li class="liComment">{{$comment->author}}</li>
             </ul>
+<<<<<<< HEAD
         @auth     
                 <form action="/comment/{{$comment->id}}" method="post">
                     @csrf
@@ -60,7 +86,22 @@
 
         @endauth
     @endforeach
+=======
+        @auth                
+                <form action="/comment/{{$comment->id}}" method="post">
 
+                        @csrf
+                        @method('delete')
+                                            
+                        {{-- <button class="btn buttonCustom text-white" type="submit">Edit</button> --}}
+                    <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+                    <button onclick="return confirm('Do You Really Want to Delete The post')"
+                    class="btn buttonCustom text-white">Delete</button>
+                </form>       
+        @endauth
+
+        @endforeach
+>>>>>>> 629d6bff9e0190168e8d5a731a4a49058c20599f
 
     </section>
 @endsection

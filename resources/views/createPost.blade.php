@@ -11,6 +11,10 @@
             <h1 class="title_header"><strong> Create your own post </strong></h1>
             <p class="pMain">Here you will be able to create your own post so later people are able to discuss about it</p>
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 629d6bff9e0190168e8d5a731a4a49058c20599f
         <div class="postDetailsBox">
             <form action="/" method="post">
                 <div class="mb-3">
@@ -45,14 +49,14 @@
             <h3 class="title_header">we kindly invite you to register</h3>
 
             <a href="/register" class=" title_header btn buttonCustom text-white">Register</a>
+<<<<<<< HEAD
 
        
+=======
+>>>>>>> 629d6bff9e0190168e8d5a731a4a49058c20599f
         </div>
 
-
     @endguest
-
-
 
     </section>
 @endsection
