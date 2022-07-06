@@ -17,6 +17,7 @@
     font-weight: $titleWeight;
     color: $textColor;
 }
+
 .nav_color {
     background-color: $navColor;
 }
@@ -37,6 +38,7 @@
     padding: 0.5rem;
     font-family: $titlesFont;
 }
+
 .pMain {
     color: $textColor;
     font-size: 3vw;
@@ -55,19 +57,23 @@
 .cardedit {
     background-color: $backgroundColor;
 }
+
 .cardBoxStyle {
     margin: 0.5rem;
     width: 21rem;
 }
-.cTextElip{
+
+.cTextElip {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
+
 .buttonCustom {
     background-color: $buttonColor;
     margin-top: 0.5rem;
 }
+
 .cardTitle {
     font-weight: $titleWeight;
 }
@@ -100,10 +106,12 @@
     margin: 0.1rem;
     font-family: $contentFont;
 }
+
 // BREEZE CLASS
 .text-white {
     color: $textColor;
 }
+
 .buttonColor {
     background-color: $buttonColor;
 }
@@ -113,7 +121,7 @@
     .pMain {
         color: $textColor;
         font-size: 1.8vw;
-        text-align: left;
+        text-align: justify;
         padding: 0.5rem;
         margin: 3rem;
         font-family: $contentFont;
@@ -143,6 +151,7 @@
         padding: 0.5rem;
         font-family: $titlesFont;
     }
+
     .liComment {
         color: $textColor;
         font-size: 2vw;
@@ -151,12 +160,43 @@
         margin: 0.5rem;
         font-family: $contentFont;
     }
+
     .ul_comments {
         margin-left: 2rem;
         margin-right: 2rem;
         text-align: left;
     }
+
     .form-label {
         font-size: 2rem;
     }
+
+    .wir {
+        color: rgb(10, 71, 77);
+        font-size: 1.8vw;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 3rem;
+        font-family: $contentFont;
+    }
+
+    .wir_1 {
+        color: $textColor;
+        font-size: 1.8vw;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 3rem;
+        font-family: $contentFont;
+    }
+
+    .row {
+        color: $textColor;
+        font-size: 1.8vw;
+        text-align: left;
+        padding: 0.5rem;
+        margin: 3rem;
+        font-family: $contentFont;
+    }
+
+    .container-fluid
 }
