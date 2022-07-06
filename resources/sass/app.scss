@@ -23,7 +23,7 @@
 
 .body_color {
     background-color: $backgroundColor;
-    min-height: 90vh;
+    // min-height: 90vh;
 }
 
 .bodyIMG{
@@ -47,7 +47,7 @@
 .pMain {
     color: $textColor;
     font-size: 3vw;
-    text-align: left;
+    text-align: justify;
     padding: 0.5rem;
     margin: 1rem;
     font-family: $contentFont;
@@ -136,7 +136,7 @@
     .pMain {
         color: $textColor;
         font-size: 1.8vw;
-        text-align: left;
+        text-align: justify;
         padding: 0.5rem;
         margin: 3rem;
         font-family: $contentFont;
