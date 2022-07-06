@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> --}}
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('/js/app.js') }}" defer  ></script>
-    
-    
+    <script src="{{ asset('/js/app.js') }}" defer></script>
+
+
     {{-- THIS IS FOR THE ICONS --}}
     <script src="https://kit.fontawesome.com/f30a166a26.js" crossorigin="anonymous"></script>
 </head>
@@ -31,12 +29,12 @@
                     <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
                 </li>
                 @guest
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/login">Log in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/register">Register</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/login">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/register">Register</a>
+                    </li>
                 @endguest
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/aboutus">About us</a>
@@ -45,16 +43,17 @@
                     <a class="nav-link text-white" href="/createpost">Create a post</a>
                 </li>
                 @auth
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="/dashboard">Dashboard</a>
-                </li>
-            </ul>
-            
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/dashboard">Dashboard</a>
+                    </li>
+                </ul>
 
-            <a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-            </form>
+
+                <a class="nav-link text-white" href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             @endauth
         </div>
     </div>
@@ -69,10 +68,11 @@
 @yield ('postDetail')
 @yield ('editComment')
 @yield ('createpost')
-<body class="body_color bodyIMG" >
+
+<body class="body_color bodyIMG">
 
 
-{{-- FOOTER --}}
+    {{-- FOOTER --}}
     <footer class="nav_text nav_color text-center footerMtop p-3 footerFix">
         <a class="nav_text text-white" href="/"><img src={{ asset('img/nav_logo.png') }} width="40"
                 height="40" class="d-inline-block align-top" alt="">
