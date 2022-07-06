@@ -38,6 +38,7 @@
     <h3 class="title_header">THOUGHTS</h3>
 
     <section class="postDetailsBox">
+        @if (count($post->comments) >= 1)
         <!-- loop through the comment list of a message and display the comment text and user -->
         @foreach ($post->comments as $comment)
             <ul class="ul_comments text-white">
@@ -56,7 +57,12 @@
                 </form>
             @endauth
         @endforeach
-
+    
+@else 
+    <h3 class="title_header liauthor text-center">♥ we don't have any comments to show ... yet !</h3>
+    
+@endif
 
     </section>
 @endsection
+
