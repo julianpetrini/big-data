@@ -56,7 +56,7 @@
                         @csrf
                         @method('delete')
                         {{-- <button class="btn buttonCustom text-white" type="submit">Edit</button> --}}
-                        <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+                        {{-- <a href="editComment" class="btn buttonCustom text-white">Edit</a> --}}
                         <button onclick="return confirm('Do You Really Want to Delete The post')"
                             class="btn buttonCustom text-white">Delete</button>
 
