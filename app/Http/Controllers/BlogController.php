@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Illuminate\Support\Facades\Auth; 
 
 
 class BlogController extends Controller
@@ -37,7 +38,7 @@ class BlogController extends Controller
         // we set the properties title and content
         // with the values that we got in the post-request
         $post->title = $request->title;
-        $post->author = $request->author;
+        $post->author = Auth::user()->name;
         $post->content = $request->content;
 
 
@@ -74,7 +75,7 @@ class BlogController extends Controller
  
         $request->validate([
             'title' => 'required',
-            'author' => 'required',
+            // 'author' => 'required',
             'content' => 'required'
         ]);
 
