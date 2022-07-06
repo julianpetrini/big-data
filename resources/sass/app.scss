@@ -136,6 +136,44 @@
     background-size: cover;
 }
 
+// NINA CLASS
+
+.wir {
+    color: rgb(10, 71, 77);
+    font-size: 1.8vw;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.wir_1 {
+    color: rgb(10, 71, 77);
+    font-size: 1.8vw;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.row {
+    color: $textColor;
+    font-size: 1.8vw;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.title-Wichtig {
+    color: rgb(10, 71, 77);
+    font-size: 1.8vw;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
     .pMain {
