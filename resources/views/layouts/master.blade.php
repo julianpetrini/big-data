@@ -14,7 +14,7 @@
 </head>
 
 {{-- NAV --}}
-<nav class="navbar navbar-expand-lg navbar-light nav_color text-white">
+<nav class="navbar navbar-expand-lg navbar-dark nav_color text-white">
     <div class="container-fluid">
         <a class="navbar-brand nav_text text-white" href="/"><img src={{ asset('img/nav_logo.png') }}
                 width="30" height="30" class="d-inline-block align-top" alt="">
@@ -42,9 +42,14 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/createpost">Create a post</a>
                 </li>
+                @auth
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/dashboard">Dashboard</a>
+                </li>
             </ul>
-            @auth
-            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+            
+
+            <a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
             </form>
@@ -61,7 +66,7 @@
 @yield ('postDetail')
 @yield ('editComment')
 @yield ('createpost')
-<body class="body_color">
+<body class="body_color bodyIMG" >
 
 
 {{-- FOOTER --}}
