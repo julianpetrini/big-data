@@ -14,7 +14,7 @@
 </head>
 
 {{-- NAV --}}
-<nav class="navbar navbar-expand-lg navbar-light nav_color text-white">
+<nav class="navbar navbar-expand-lg navbar-dark nav_color text-white">
     <div class="container-fluid">
         <a class="navbar-brand nav_text text-white" href="/"><img src={{ asset('img/nav_logo.png') }}
                 width="30" height="30" class="d-inline-block align-top" alt="">
