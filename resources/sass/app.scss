@@ -90,7 +90,7 @@
 }
 
 .ul_comments {
-    margin-left: 1rem;
+    // margin-left: 1rem;
     margin-right: 1rem;
     text-align: left;
 }
@@ -107,6 +107,11 @@
     padding: 0.1rem;
     margin: 0.1rem;
     font-family: $contentFont;
+}
+
+.liauthor{
+    @extend .liComment;
+    font-style: italic;
 }
 
 .createGuest{
@@ -175,7 +180,7 @@
         font-family: $contentFont;
     }
     .ul_comments {
-        margin-left: 2rem;
+        // margin-left: 2rem;
         margin-right: 2rem;
         text-align: left;
     }
