@@ -47,8 +47,10 @@
             <form action="/postDetail/{{$post->id}}" method="post">
                 @csrf
                 @method('delete')
-                <button class="btn btn-primary" type="submit">Delete</button>
-                <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+                <button class="btn buttonCustom text-white" type="submit">Delete</button>
+                {{-- <a href="editComment" class="btn buttonCustom text-white">Edit</a> --}}
+                <button onclick="return confirm('Do You Really Want to Delete The post')" class="btn buttonCustom text-white">Delete</button>
+                    
             </form>
         @endauth
         @endforeach
