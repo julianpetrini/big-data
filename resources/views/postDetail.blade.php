@@ -16,7 +16,7 @@
             <h3 class="title_header"><strong> LEAVE YOUR COMMENTS </strong></h3>
             <form action="/postDetail" method="post">
                 <!-- hidden field holding message->id to remember, which message
-                            the new comment will belong to -->
+                                            the new comment will belong to -->
                 <input type="hidden" name="post_id" value="{{ $post->id }}">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label text-white">Name</label>
@@ -39,30 +39,27 @@
 
     <section class="postDetailsBox">
         @if (count($post->comments) >= 1)
-        <!-- loop through the comment list of a message and display the comment text and user -->
-        @foreach ($post->comments as $comment)
-            <ul class="ul_comments text-white">
-                <li class="liComment">{{ $comment->comment }}</li>
-                <li class="liauthor">{{ $comment->post_id }}</li>
-            </ul>
-            @auth
-                <form action="/postDetail/{{ $post->id }}" method="post">
-                    @csrf
-                    @method('delete')
-                    {{-- <button class="btn buttonCustom text-white" type="submit">Edit</button> --}}
-                    <a href="editComment" class="btn buttonCustom text-white">Edit</a>
-                    <button onclick="return confirm('Do You Really Want to Delete The post')"
-                        class="btn buttonCustom text-white">Delete</button>
+            <!-- loop through the comment list of a message and display the comment text and user -->
+            @foreach ($post->comments as $comment)
+                <ul class="ul_comments text-white">
+                    <li class="liComment">{{ $comment->comment }}</li>
+                    <li class="liauthor">{{ $comment->post_id }}</li>
+                </ul>
+                @auth
+                    <form action="/postDetail/{{ $post->id }}" method="post">
+                        @csrf
+                        @method('delete')
+                        {{-- <button class="btn buttonCustom text-white" type="submit">Edit</button> --}}
+                        <a href="editComment" class="btn buttonCustom text-white">Edit</a>
+                        <button onclick="return confirm('Do You Really Want to Delete The post')"
+                            class="btn buttonCustom text-white">Delete</button>
 
-                </form>
-            @endauth
-        @endforeach
-    
-@else 
-    <h3 class="title_header liauthor text-center">♥ we don't have any comments to show ... yet !</h3>
-    
-@endif
+                    </form>
+                @endauth
+            @endforeach
+        @else
+            <h3 class="title_header liauthor text-center">♥ we don't have any comments to show ... yet !</h3>
+        @endif
 
     </section>
 @endsection
-
