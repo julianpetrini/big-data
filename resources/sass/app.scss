@@ -26,6 +26,13 @@
     min-height: 90vh;
 }
 
+.bodyIMG{
+    background-image: url('/img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .footerFix {
     margin-top: auto;
 }
@@ -59,7 +66,7 @@
     margin: 0.5rem;
     width: 21rem;
 }
-.cTextElip{
+.cTextElip {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -67,6 +74,7 @@
 .buttonCustom {
     background-color: $buttonColor;
     margin-top: 0.5rem;
+    max-width: 30vw
 }
 .cardTitle {
     font-weight: $titleWeight;
@@ -100,12 +108,27 @@
     margin: 0.1rem;
     font-family: $contentFont;
 }
+
+.createGuest{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 // BREEZE CLASS
 .text-white {
     color: $textColor;
 }
 .buttonColor {
     background-color: $buttonColor;
+}
+
+.bgImg {
+    background-image: url("/public/img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Desktop adjustments*/

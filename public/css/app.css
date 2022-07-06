@@ -10310,6 +10310,13 @@ textarea.form-control-lg {
   min-height: 90vh;
 }
 
+.bodyIMG {
+  background-image: url("/img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .footerFix {
   margin-top: auto;
 }
@@ -10355,6 +10362,7 @@ textarea.form-control-lg {
 .buttonCustom {
   background-color: #00B1FD;
   margin-top: 0.5rem;
+  max-width: 30vw;
 }
 
 .cardTitle {
@@ -10390,12 +10398,27 @@ textarea.form-control-lg {
   font-family: "Montserrat", sans-serif;
 }
 
+.createGuest {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .text-white {
   color: white;
 }
 
 .buttonColor {
   background-color: #00B1FD;
+}
+
+.bgImg {
+  background-image: url("/public/img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Desktop adjustments*/

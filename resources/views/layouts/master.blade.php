@@ -61,7 +61,7 @@
 @yield ('postDetail')
 @yield ('editComment')
 @yield ('createpost')
-<body class="body_color">
+<body class="body_color bodyIMG" >
 
 
 {{-- FOOTER --}}
