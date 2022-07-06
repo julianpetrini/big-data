@@ -1,3 +1,25 @@
+About the Babili-Projekt -  BigData
+
+Creating a Blog website about BigData where visitors can add comments … Building a blog website that allows registered users to exchange text and feedback messages about a hot topic you want to discuss with others. Caution: Guest users may only read the blog's articles - but not add or edit any of them. Provide a simple way for all users to a add short feedback to a selected blog article and display all feedback together with that article.
+
+Team-Contract:      https://docs.google.com/document/d/1t-oLnP-MNZIHALsG2I2Qqg4D8gFUir64/edit?usp=sharing&ouid=118084235484423417831&rtpof=true&sd=true
+
+Mockup/Wireframe:   https://tree.taiga.io/project/amstutzsven-bigdata/wiki/mockup
+                    https://www.figma.com/file/uTAEhLbqnnhdsnWauJoF1g/BIG-DATA-LETS-TALK-ALL-PAGES?node-id=0%3A1
+
+DB Scheme:          https://tree.taiga.io/project/amstutzsven-bigdata/wiki/db-scheme
+
+Color Scheme:       https://tree.taiga.io/project/amstutzsven-bigdata/wiki/color-scheme
+
+Meetings:           https://tree.taiga.io/project/amstutzsven-bigdata/wiki/protokolle
+
+Taiga (Kanban):     https://tree.taiga.io/project/amstutzsven-bigdata/kanban
+
+Data Scheme (PDF):  
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
