@@ -198,5 +198,13 @@
         font-family: $contentFont;
     }
 
-    .container-fluid
+    .container-fluid {
+        color: $textColor;
+        font-size: 1.8vw;
+        text-align: left;
+        padding: 0.5rem;
+        margin: 3rem;
+        font-family: $contentFont;
+
+    }
 }
