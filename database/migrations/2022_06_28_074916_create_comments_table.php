@@ -18,6 +18,8 @@ return new class extends Migration
 
             $table->integer('post_id')->unsigned();
 
+            $table->string("author")->nullable();
+
             $table->string("comment");
 
             $table->timestamps();
