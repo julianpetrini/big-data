@@ -7,12 +7,13 @@
         <img src="{{ asset('img/logo_big_data_white.png') }}" class="img-fluid rounded mx-auto d-block"
             alt="Responsive image">
 
-        <h1 class="title_header">Ihre besten Daten finden und kommentieren</h1>
+        <h1 class="title_header">Big Data: Nach dem Hype ist vor der Chance</h1>
 
-        <p class="pMain">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque blanditiis autem.
-            Laboriosam temporibus veniam rerum labore commodi totam ad nisi fuga, rem alias veritatis iure facilis sapiente
-            quam
-            ipsam!</p>
+        <p class="pMain">Der Begriff „Big Data“ bezeichnet die große Menge an strukturierten und unstrukturierten Daten, die
+            Unternehmen Tag für Tag überschwemmen. Nicht die Daten selbst sind so wichtig. Was zählt, ist das, was
+            Unternehmen mit den Daten machen. Große Datenmengen können analysiert werden, um Erkenntnisse zu gewinnen
+            und
+            auf deren Grundlage bessere Entscheidungen zu treffen und das Unternehmen strategisch auszurichten.</p>
 
     </header>
 @endsection
@@ -23,7 +24,7 @@
         @foreach ($posts as $post)
             <div class="card cardBgColor cardBoxStyle">
 
-                <img class="card-img-top" src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}"
+                <img class="card-img-top imgSize" src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}"
                     alt="Card image cap">
                 <div class="card-body cardedit">
                     <h5 class="card-title "><strong>{{ $post->title }}</strong></h5>
