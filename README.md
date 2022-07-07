@@ -7,7 +7,7 @@ Team-Contract:      https://docs.google.com/document/d/1t-oLnP-MNZIHALsG2I2Qqg4D
 Mockup/Wireframe:   https://tree.taiga.io/project/amstutzsven-bigdata/wiki/mockup
                     https://www.figma.com/file/uTAEhLbqnnhdsnWauJoF1g/BIG-DATA-LETS-TALK-ALL-PAGES?node-id=0%3A1
 
-DB Scheme:          https://tree.taiga.io/project/amstutzsven-bigdata/wiki/db-scheme
+DB Scheme (PDF):    https://drive.google.com/file/d/16_lhySCBjT0nLBWaoUOgMsvBlNmKhyjq/view?usp=sharing
 
 Color Scheme:       https://tree.taiga.io/project/amstutzsven-bigdata/wiki/color-scheme
 
@@ -15,7 +15,7 @@ Meetings:           https://tree.taiga.io/project/amstutzsven-bigdata/wiki/proto
 
 Taiga (Kanban):     https://tree.taiga.io/project/amstutzsven-bigdata/kanban
 
-Data Scheme (PDF):  https://drive.google.com/file/d/16_lhySCBjT0nLBWaoUOgMsvBlNmKhyjq/view?usp=sharing
+  
 
 
 
