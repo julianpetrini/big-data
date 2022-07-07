@@ -10459,6 +10459,10 @@ textarea.form-control-lg {
   font-family: "Montserrat", sans-serif;
 }
 
+.imgSize {
+  height: 20vh;
+}
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
   .pMain {
@@ -10504,6 +10508,14 @@ textarea.form-control-lg {
   }
   .form-label {
     font-size: 2rem;
+  }
+  .imgSize {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 994px) and (max-width: 1190px) {
+  .imgSize {
+    height: 21vh;
   }
 }
 /*
@@ -11293,9 +11305,6 @@ select {
 .h-16 {
   height: 4rem;
 }
-.h-10 {
-  height: 2.5rem;
-}
 .h-4 {
   height: 1rem;
 }
@@ -11308,14 +11317,14 @@ select {
 .h-8 {
   height: 2rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
 .w-5 {
   width: 1.25rem;
-}
-.w-auto {
-  width: auto;
 }
 .w-4 {
   width: 1rem;
@@ -11334,6 +11343,9 @@ select {
 }
 .w-8 {
   width: 2rem;
+}
+.w-auto {
+  width: auto;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -11501,10 +11513,6 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -11560,10 +11568,6 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -11640,9 +11644,6 @@ select {
 .font-semibold {
   font-weight: 600;
 }
-.font-bold {
-  font-weight: 700;
-}
 .uppercase {
   text-transform: uppercase;
 }
@@ -11681,10 +11682,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -11696,6 +11693,10 @@ select {
 .text-indigo-700 {
   --tw-text-opacity: 1;
   color: rgb(67 56 202 / var(--tw-text-opacity));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .text-gray-900 {
   --tw-text-opacity: 1;
@@ -11798,10 +11799,6 @@ select {
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-.hover\:bg-yellow-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
