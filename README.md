@@ -15,7 +15,7 @@ Meetings:           https://tree.taiga.io/project/amstutzsven-bigdata/wiki/proto
 
 Taiga (Kanban):     https://tree.taiga.io/project/amstutzsven-bigdata/kanban
 
-Data Scheme (PDF):  
+Data Scheme (PDF):  https://drive.google.com/file/d/16_lhySCBjT0nLBWaoUOgMsvBlNmKhyjq/view?usp=sharing
 
 
 
