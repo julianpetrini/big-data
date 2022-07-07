@@ -1,5 +1,5 @@
 <x-app-layout>
-    <h1 class="title_header">Ihre besten Daten finden und kommentieren</h1>
+    <h1 class="title_header">Big Data: Nach dem Hype ist vor der Chance</h1>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
