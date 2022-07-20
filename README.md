@@ -1,3 +1,15 @@
+![mobileversion](https://github.com/julianpetrini/big-data/blob/master/public/img/GITHUB%20PREVIEW%20PROJECT%20IMG.png?raw=true)
+
+In this opportunity, I was directing front end. We started with brainstorming to get the name and where we wanted to go with it. Some steps forward and after being able to represent our ideas in Figma we created a design guide where everyone involved in it could easily get useful information. We worked along with the backend to have the answer to their questions. It was an amazing and nourishing experience.
+
+## Color Guide
+
+![mobileversion](https://github.com/julianpetrini/big-data/blob/master/public/img/COLOR%20.png?raw=true)
+
+## Fonts Guide
+
+![mobileversion](https://github.com/julianpetrini/big-data/blob/master/public/img/FONTS.png?raw=true)
+
 About the Babili-Projekt -  BigData
 
 Creating a Blog website about BigData where visitors can add comments … Building a blog website that allows registered users to exchange text and feedback messages about a hot topic you want to discuss with others. Caution: Guest users may only read the blog's articles - but not add or edit any of them. Provide a simple way for all users to a add short feedback to a selected blog article and display all feedback together with that article.
